@@ -26,21 +26,3 @@ navs.forEach(function(btn){
     navBtn.classList.remove("show-sub-text");
   })
 })
-
-
-
-// slide script
-
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
- },
- autoplay: {
-    delay: 2500,
-    disableOnInteraction: true
-  },
-});

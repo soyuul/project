@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    <div>
         <div class="pop">
             친구에게 <span>About Me</span>를 추천해주세요! 친구를 초대 할 때마다 친구도 나도 <span>3,000M</span> 적립
         </div>
@@ -171,12 +170,6 @@
                     </div>
                     <div class="swiper-slide">
                       <img src="./img/main/Me_img04.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./img/main/Me_img05.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./img/main/Me_img06.png" alt="">
                     </div>
                   </div>
                   <div class="swiper-pagination"></div>
@@ -354,20 +347,25 @@
                             </div>
                         </div>
                     </li>
-                </ul>   
+                </ul>  
+            </div>
+            <div class="time_slideNav">
+                <div class="navigation-prev">←</div>
+                <div class="navigation-next">→</div>
             </div>
         </div>
     
 
         <div class="product">
-            <h3>추천상품</h3>
-            <div class="PM_bnt">
-                <button class="p_bnt best_bnt" id="bestBnt">베스트</button>
-                <button class="p_bnt new_bnt" id="newBnt">신상품</button>
+            <div class="product_title">
+                <h3>추천상품</h3>
+                <div class="PM_btn">
+                    <button class="p_btn best_bnt" data-id="best">베스트</button>
+                    <button class="p_btn new_bnt" data-id="new">신상품</button>
+                </div>
             </div>
-            
     
-            <ul class="products product_bests" id="productBests">
+            <ul class="products product_bests section-center" id="productBests">
                 <li class="all_product product_list product_B">
                     <div class="img">
                         <img src="./img/best/Me_best01.png" alt="">
@@ -389,131 +387,57 @@
     
                 <li class="all_product product_list product_B">
                     <div class="img">
-                        <img src="./img/best/Me_best02.png" alt="">
+                        <img src="./img/best/Me_best01.png" alt="">
                     </div>
                     <div class="txt">
-                        <h4>카카두C 토닝 패드</h4>
+                        <h4>비 클린 톤업선</h4>
                     </div>
                     <div class="price">
-                        <p>24,000</p>
+                        <span class="circle">50%</span>
+                        <p>12,500<span class="pr">25,000</span></p>
                     </div>
                     <div class="add">
-                        <h5>⭐5.7 / 리뷰 178</h5>
+                        <h5>⭐4.7 / 리뷰 354</h5>
                         <span class="circle2">
-                            <icon></icon>
+                            <div class="icon"></div>
                         </span>
                     </div>
                 </li>
-    
-                <li class="all_product product_list product_N">
-                    <div class="img">
-                        <img src="./img/best/Me_best03.png" alt="">
-                    </div>
-                    <div class="txt">
-                        <h4>쌀 막걸리 클렌징 폼 120ml</h4>
-                    </div>
-                    <div class="price">
-                        <span class="circle">30%</span>
-                        <p>9,800<span class="pr">14,000</span></p>
-                    </div>
-                    <div class="add">
-                        <h5>⭐4.9 / 리뷰 606</h5>
-                        <span class="circle2">
-                            <icon></icon>
-                        </span>
-                    </div>
-                </li>
-    
+
                 <li class="all_product product_list product_B">
                     <div class="img">
-                        <img src="./img/best/Me_best04.png" alt="">
+                        <img src="./img/best/Me_best01.png" alt="">
                     </div>
                     <div class="txt">
-                        <h4>숲 진정 수분 크림</h4>
+                        <h4>비 클린 톤업선</h4>
                     </div>
                     <div class="price">
-                        <span class="circle">30%</span>
-                        <p>21,000<span class="pr">20,000</span></p>
+                        <span class="circle">50%</span>
+                        <p>12,500<span class="pr">25,000</span></p>
                     </div>
                     <div class="add">
-                        <h5>⭐4.9 / 리뷰 691</h5>
+                        <h5>⭐4.7 / 리뷰 354</h5>
                         <span class="circle2">
-                            <icon></icon>
+                            <div class="icon"></div>
                         </span>
                     </div>
                 </li>
-            </ul>
-    
-            <ul class="products product_news" id="productNews">
-                <li class="all_product product_list product_N">
+
+                <li class="all_product product_list product_B">
                     <div class="img">
-                        <img src="./img/new/Me_new01.png" alt="">
+                        <img src="./img/best/Me_best01.png" alt="">
                     </div>
                     <div class="txt">
-                        <h4>메이플세라 비건 립 버터</h4>
+                        <h4>비 클린 톤업선</h4>
                     </div>
                     <div class="price">
-                        <p>14,000</p>
+                        <span class="circle">50%</span>
+                        <p>12,500<span class="pr">25,000</span></p>
                     </div>
                     <div class="add">
-                        <h5>⭐5.0 / 리뷰 38</h5>
+                        <h5>⭐4.7 / 리뷰 354</h5>
                         <span class="circle2">
-                            <icon></icon>
-                        </span>
-                    </div>
-                </li>
-    
-                <li class="all_product product_list product_N">
-                    <div class="img">
-                        <img src="./img/new/Me_new02.png" alt="">
-                    </div>
-                    <div class="txt">
-                        <h4>쌀 막걸리 세라마이드 크림</h4>
-                    </div>
-                    <div class="price">
-                        <p>35,000</p>
-                    </div>
-                    <div class="add">
-                        <h5>⭐5.0 / 리뷰 86</h5>
-                        <span class="circle2">
-                            <icon></icon>
-                        </span>
-                    </div>
-                </li>
-    
-                <li class="all_product product_list product_N">
-                    <div class="img">
-                        <img src="./img/new/Me_new03.png" alt="">
-                    </div>
-                    <div class="txt">
-                        <h4>쌀 막걸리 클렌징 폼 120ml</h4>
-                    </div>
-                    <div class="price">
-                        <span class="circle">30%</span>
-                        <p>9,800<span class="pr">14,000</span></p>
-                    </div>
-                    <div class="add">
-                        <h5>⭐4.9 / 리뷰 606</h5>
-                        <span class="circle2">
-                            <icon></icon>
-                        </span>
-                    </div>
-                </li>
-    
-                <li class="all_product product_list product_N">
-                    <div class="img">
-                        <img src="./img/new/Me_new04.png" alt="">
-                    </div>
-                    <div class="txt">
-                        <h4>메이플세라 비건 핸드 버터</h4>
-                    </div>
-                    <div class="price">
-                        <p>12,000</p>
-                    </div>
-                    <div class="add">
-                        <h5>⭐5.0 / 리뷰 22</h5>
-                        <span class="circle2">
-                            <icon></icon>
+                            <div class="icon"></div>
                         </span>
                     </div>
                 </li>
@@ -522,165 +446,214 @@
     
     
         <div class="big">
-            <div class="big_img">
-                <img src="./img/big/Me_bigM.jpg" alt="">
+            <h3>#초특가샵</h3>
+            <div class="big_container">
+                <div class="big_img">
+                    <img src="./img/big/Me_bigM.jpg" alt="">
+                </div>
+
+                <div class="big_contant">
+                    <div class="b_text">
+                        <h3>한정 수량 소진 전 구매 추천!</h3>
+                        <div class="b_txt">
+                            <h4>어바웃미의 인기상품을 합리적인가격으로 만나보세요</h4>
+                            <span>#초특가</span>
+                            <span>#직영몰 단독혜택</span>
+                            <span>#인기세트</span>
+                            <span>#회원전용관</span>
+                        </div>
+                    </div>
+                    <ul class="big_slide">
+                        <li class="all_product big_product">
+                            <div>
+                                <div class="img">
+                                    <img src="./img/time/Me_time01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <h4>숲 진정 수분 크림</h4>
+                                </div>
+                                <div class="price">
+                                    <p>21,000<span class="pr">30,000</span></p>
+                                </div>
+                                <div class="add">
+                                    <h5>★ 4.9 / 리뷰 813</h5>
+                                    <span class="circle2">
+                                        <div class="icon"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="all_product big_product">
+                            <div>
+                                <div class="img">
+                                    <img src="./img/time/Me_time01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <h4>숲 진정 수분 크림</h4>
+                                </div>
+                                <div class="price">
+                                    <p>21,000<span class="pr">30,000</span></p>
+                                </div>
+                                <div class="add">
+                                    <h5>★ 4.9 / 리뷰 813</h5>
+                                    <span class="circle2">
+                                        <div class="icon"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </li><li class="all_product big_product">
+                            <div>
+                                <div class="img">
+                                    <img src="./img/time/Me_time01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <h4>숲 진정 수분 크림</h4>
+                                </div>
+                                <div class="price">
+                                    <p>21,000<span class="pr">30,000</span></p>
+                                </div>
+                                <div class="add">
+                                    <h5>★ 4.9 / 리뷰 813</h5>
+                                    <span class="circle2">
+                                        <div class="icon"></div>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>  
             </div>
-            <ul class="B_slide">
-                <li class="all_product">
-                    <div class="img">
-                        <img src="./img/best/Me_best01.png" alt="">
+        </div>
+
+
+        <div class="review">
+            <h3>리뷰</h3>
+            <ul class="review_slide">
+                <li class="review_product">
+                    <div>
+                        <div class="img">
+                            <img src="./img/time/Me_time01.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <h6>어쩌구 저쩌구</h6>
+                            <span>to****</span>
+                            <span>2023.01.08</span>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <a href="#">
+                                <div class="Aimg">
+                                    <img src="" alt="">
+                                    <div class="Atxt">
+                                        
+                                        <h7>리뷰 <span>50</span> 평점 <span>4.9</span></h7>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="txt">
-                        <h4>비 클린 톤업선</h4>
+                </li>
+
+                <li class="review_product">
+                    <div>
+                        <div class="img">
+                            <img src="./img/time/Me_time01.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <h6>어쩌구 저쩌구</h6>
+                            <span>to****</span>
+                            <span>2023.01.08</span>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <a href="#">
+                                <div class="Aimg">
+                                    <img src="" alt="">
+                                    <div class="Atxt">
+                                        
+                                        <h7>리뷰 <span>50</span> 평점 <span>4.9</span></h7>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="price">
-                        <span class="circle">50%</span>
-                        <p>12,500<span class="pr">25,000</span></p>
+                </li>
+
+                <li class="review_product">
+                    <div>
+                        <div class="img">
+                            <img src="./img/time/Me_time01.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <h6>어쩌구 저쩌구</h6>
+                            <span>to****</span>
+                            <span>2023.01.08</span>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <a href="#">
+                                <div class="Aimg">
+                                    <img src="" alt="">
+                                    <div class="Atxt">
+                                        
+                                        <h7>리뷰 <span>50</span> 평점 <span>4.9</span></h7>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="add">
-                        <h5>⭐4.7 / 리뷰 354</h5>
-                        <span class="circle2">
-                            <div class="icon"></div>
-                        </span>
+                </li>
+
+                <li class="review_product">
+                    <div>
+                        <div class="img">
+                            <img src="./img/time/Me_time01.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <h6>어쩌구 저쩌구</h6>
+                            <span>to****</span>
+                            <span>2023.01.08</span>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <a href="#">
+                                <div class="Aimg">
+                                    <img src="" alt="">
+                                    <div class="Atxt">
+                                        
+                                        <h7>리뷰 <span>50</span> 평점 <span>4.9</span></h7>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="review_product">
+                    <div>
+                        <div class="img">
+                            <img src="./img/time/Me_time01.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <h6>어쩌구 저쩌구</h6>
+                            <span>to****</span>
+                            <span>2023.01.08</span>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <a href="#">
+                                <div class="Aimg">
+                                    <img src="" alt="">
+                                    <div class="Atxt">
+                                        
+                                        <h7>리뷰 <span>50</span> 평점 <span>4.9</span></h7>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </li>
             </ul>
-        </div>
-        <div class="review">
-            <h3>리뷰</h3>
-                <div class="R">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div class="txt">
-                        <h6></h6>
-                        <h7></h7>
-                        <span></span>
-                    </div>
-                    <div class="line"></div>
-                    <div>
-                        <a href="#">
-                            <div class="Aimg">
-                                <img src="" alt="">
-                                <div class="Atxt">
-                                    <h6>어쩌구 저쩌구</h6>
-                                    <h7>리뷰 50 평점 4.9</h7>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-    
-                <div class="R">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div class="txt">
-                        <h6></h6>
-                        <h7></h7>
-                        <span></span>
-                    </div>
-                    <div class="line"></div>
-                    <div>
-                        <a href="#">
-                            <div class="Aimg">
-                                <img src="" alt="">
-                                <div class="Atxt">
-                                    <h6>어쩌구 저쩌구</h6>
-                                    <h7>리뷰 <span>50</span> 평점 <span>4.9</span></h7>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="R">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div class="txt">
-                        <h6></h6>
-                        <h7></h7>
-                        <span></span>
-                    </div>
-                    <div class="line"></div>
-                    <div>
-                        <a href="#">
-                            <div class="Aimg">
-                                <img src="" alt="">
-                                <div class="Atxt">
-                                    <h6>어쩌구 저쩌구</h6>
-                                    <h7>리뷰 50 평점 4.9</h7>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="R">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div class="txt">
-                        <h6></h6>
-                        <h7></h7>
-                        <span></span>
-                    </div>
-                    <div class="line"></div>
-                    <div>
-                        <a href="#">
-                            <div class="Aimg">
-                                <img src="" alt="">
-                                <div class="Atxt">
-                                    <h6>어쩌구 저쩌구</h6>
-                                    <h7>리뷰 50 평점 4.9</h7>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="R">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div class="txt">
-                        <h6></h6>
-                        <h7></h7>
-                        <span></span>
-                    </div>
-                    <div class="line"></div>
-                    <div>
-                        <a href="#">
-                            <div class="Aimg">
-                                <img src="" alt="">
-                                <div class="Atxt">
-                                    <h6>어쩌구 저쩌구</h6>
-                                    <h7>리뷰 50 평점 4.9</h7>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="R">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div class="txt">
-                        <h6></h6>
-                        <h7></h7>
-                        <span></span>
-                    </div>
-                    <div class="line"></div>
-                    <div>
-                        <a href="#">
-                            <div class="Aimg">
-                                <img src="" alt="">
-                                <div class="Atxt">
-                                    <h6>어쩌구 저쩌구</h6>
-                                    <h7>리뷰 50 평점 4.9</h7>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
         </div>
     
     
@@ -690,6 +663,9 @@
 
         <!-- 외부 스크립트 -->
         <script src="./script/navScript.js"></script>
+        <script src="./script/slideScript.js"></script>
+        <script src="./script/timeScript.js"></script>
+        <script src="./script/btnScript.js"></script>
 </body>
 </html>
 
