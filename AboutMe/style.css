@@ -244,24 +244,24 @@ height: 100%;
 object-fit: cover;
 }
 
-.swiper-pagination{
+.swiper .swiper-pagination{
 width: 100%;
 margin-bottom: 50px;
 }
 
-.swiper-pagination-bullet {
+.swiper .swiper-pagination-bullet {
 font-size: 14px;
 font-weight: 500;
 background-color: transparent;
 }
 
-.swiper-pagination-bullet-active {
+.swiper .swiper-pagination-bullet-active {
 width: 100px;
 color: black;
 background-color: transparent;
 }
 
-.swiper-pagination-bullet-active::after {
+.swiper .swiper-pagination-bullet-active::after {
 content: "---------------";
 float: right;
 font-weight: 900;
@@ -322,23 +322,17 @@ background-color: #fff;
 }
 
 /* time slide */
-.time_slide {
-width: 720px;
-height: 550px;
-display: flex;
-justify-content: space-between;
-overflow: hidden;
+.swiper2 {
+  width: 720px;
+  height: 550px;
+  overflow: hidden;
 }
 
-.time_product{
-margin: 0 20px 0 0;
-}
-
-.time_slide img {
-display: block;
-width: 350px;
-height: 100%;
-object-fit: cover;
+.swiper2 .swiper-slide img {
+  display: block;
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .time_slideNav{
@@ -350,6 +344,7 @@ font-weight: 300;
 position: absolute;
 bottom: 90px;
 left: 150px;
+cursor: pointer;
 } 
 
 /* recommend */
@@ -437,21 +432,20 @@ justify-content: space-between;
   .big_contant .b_txt{
     margin: 20px 0;
   }
-  
-  .big_slide {
+  /* big slide */
+  .swiper3 {
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    overflow: hidden; 
   }
 
-  .big_product{
-    margin-right: 20px;
+  .swiper3 .swiper-slide img {
+    display: block;
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
   }
-  
-  .big_slide img{
-      width: 300px;
-      height: 100%;
-  }
+
 
   /* review */
 .review{
@@ -488,8 +482,8 @@ margin: 150px;
 }
 
 .official-container{
-display: flex;
-justify-content: space-between;
+display: grid;
+grid-template-columns: 750px 500px 140px;
 }
 
 .official-grid-img {
@@ -500,19 +494,63 @@ justify-content: space-between;
 }
 
 .official-grid-img img {
-width: 200px;
-height: 200px;
+width: 250px;
+height: 250px;
 }
 
 .official-img-big img{
-width: 400px;
-height: 400px;
+width: 500px;
+height: 500px;
 }
 
 /* footer */
+footer{
+  padding: 150px;
+  display: flex;
+  justify-content: space-between;
+  border-top: #cccccc solid 1px;
+}
 
+.footer-content1 div:nth-child(1){
+  margin-bottom: 40px;
+}
+
+footer img{
+  width: 140px;
+}
+
+footer p{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #222;
+}
+
+footer .span-btn{
+  margin: 0 0 0 5px;
+  padding: 2px 4px;
+  font-size: 0.7rem;
+  background-color: #bbb;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .span-p{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #bbb;
+}
+
+.footer-content2 div:nth-child(1){
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
 
 /*상품 css*/
+.all_product{
+  cursor: pointer;
+}
+
 .all_product .txt {
 margin: 15px 0;
 }

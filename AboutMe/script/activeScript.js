@@ -17,3 +17,4 @@ about.addEventListener("click", function(e){
         element.classList.add("active");
     }
 })
+
